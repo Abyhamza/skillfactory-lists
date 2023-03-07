@@ -56,3 +56,55 @@ for index in range(len(users[5])):
     # print(index, exited, user_id)
     if exited == 1:
         print(user_id)
+
+print(not True)
+print(not False)
+
+# можно проверить, находиться ли число 1 в промежутке (0,4)
+cond1 = 0 < 1
+cond2 = 1 < 4
+
+print(cond1 and cond2)
+
+# или, например, содержит ли две строки один и тот же символ
+cond3 = 't' in 'python'
+cond4 = 't' in 'django'
+
+print(cond3 and cond4)
+
+# к слову, логическое вырожения можно сразу объеденять в одно целое
+print(('t' in 'python') or ('t' in 'django'))
+
+print((not True) or (True and not True))
+
+a = 3
+b = 4
+print(a >= 1 and a > b)
+print(a > b or a <= b)
+print(not (a > b) and a != b)
+print(b != 4 and not(a <= 3))
+
+print('1 : Задача')
+# Запишите вместо вопросительных знаков выражение, которое вернет True, если указывается високосный год, иначе False.
+#
+# Например, x = 2000 -> True; x = 1900 -> False; и т.д.
+
+def is_leap_year_1(x):
+    if x % 4 == 0 and x % 100 == 0 and x % 400 == 0:
+        return True
+    elif x % 4 == 0 and x % 100 == 0:
+        return False
+    elif x % 4 == 0:
+        return True
+    return False
+
+def is_leap_year_2(x):
+    return ((x % 4 == 0 and x % 100 == 0 and x % 400 == 0) or (x % 4 == 0)) \
+        and not (x % 4 == 0 and x % 100 == 0 and not x % 400 == 0)
+
+def is_leap_year(x):
+    return (x % 400 == 0) or ((x % 4 == 0) and (x % 100 != 0))
+
+print('Високосная 2000 ', is_leap_year(2000))
+print('Високосная 2008 ', is_leap_year(2008))
+print('Високосная 1900 ', is_leap_year(1900))
