@@ -108,3 +108,87 @@ def is_leap_year(x):
 print('Високосная 2000 ', is_leap_year(2000))
 print('Високосная 2008 ', is_leap_year(2008))
 print('Високосная 1900 ', is_leap_year(1900))
+
+str_list = list(str(123456789))
+int_list = list(map(int, str_list))
+print('5' in str_list)
+
+def has_3_and_7(n):
+    return '3' in str(n) and '7' in str(n)
+
+print(has_3_and_7(123))
+
+a = [1, 2, 3]
+print(id(a)) # id возвращает идентификатор объекта
+
+b = a
+print(id(b))
+
+print(a is b) # a и b являются одним и тем же объектом
+
+a = [1, 2, 3]
+b = [1, 2, 3]
+print(a == b)
+print(a is b)
+
+# Хорошо
+x = None
+print(x is None)
+
+#if # Условие:
+    # Блок инструкций 1
+#else:
+    # Блок инструкций 2
+
+is_rainy = True  # Дождь будет
+heavy_rain = False  # несильный дождь
+
+if is_rainy:
+    if heavy_rain:
+        print("Брать зонт")
+    else:
+        print("Надеть дождевик")
+else:
+    print("Не брать зонт")
+# msg = input()
+# while msg != 'Пока':
+#     if msg == 'Привет':
+#         print('привет как дела')
+#         msg = input()
+#         if msg == "Хорошо":
+#             print("отлично, а что именно?")
+#             msg = input()
+#             if msg == 'Работа':
+#                 print('super')
+#         elif msg == 'Плохо':
+#             print("Почему")
+#
+#     else:
+#         print('Я тебя не понял')
+#         print('test')
+#     msg = input()
+
+# print(bool(0))
+# print(bool(1))
+#
+# print(bool(""))
+# print(bool("1"))
+#
+# print(bool([]))
+# print(bool([1]))"
+
+
+print('2: Задача')
+#Запишите вместо вопросительных знаков выражение, которое вернет True, когда каждое из чисел А и В нечетное.
+def are_both_odd(A, B):
+    if A % 2 == 1 and B % 2 == 1:
+        return True
+    else:
+        return False
+
+print(are_both_odd(2,4))
+
+
+
+
+
