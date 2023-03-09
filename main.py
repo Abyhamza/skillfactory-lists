@@ -187,7 +187,72 @@ def are_both_odd(A, B):
         return False
 
 print(are_both_odd(2,4))
+x = -1
+y = -5
+if x > 0 and y > 0:
+        print("Первая четверть")
+if y < 0 and x > 0:
+        print("Четвертая четверть")
+if x < 0 and y < 0:
+        print("Вторая четверть")
+if y < 0 and x < 0:
+        print("Третья четверть")
 
+# month = int(input())
+#
+# if month in [3, 4, 5]:
+#     print("Весна")
+# elif month in [6, 7, 8]:
+#     print("Лето")
+# elif month in [9, 10, 11]:
+#     print("Осень")
+# elif month in [12, 1, 2]:
+#     print("Зима")
+
+def get_wind_class(speed):
+    if speed >= 1 and speed <= 4:
+        return "weak [1]"
+    elif speed >= 5 and speed <= 10:
+        return "moderate [2]"
+    elif speed >= 11 and speed <= 18:
+        return "strong [3]"
+    elif speed >= 19:
+        return "hurricane [4]"
+
+get_wind_class(19)
+
+user_database = {
+    'usszdzbdzer': 'passwosdhkfbshdjfbdrd',
+    'iseedeadpeople': 'greedisgood',
+    'hesoyam': 'tgm'
+}
+
+db_username: str = 'kazbek'
+db_password: str = '1234'
+
+def check_user(username, password):
+    return username in user_database and password == user_database[username]
+
+
+print(check_user('hesoyam','tgm'))
+
+name_phone = {
+    'kazbek': '8784734',
+    'kamran': '85734909',
+
+}
+print(name_phone['kazbek'])
+
+import datetime
+
+open_until = 20
+time_now = datetime.datetime.now().hour
+
+tsekh_open = 'open' if time_now < open_until else 'closed'
+print(tsekh_open)
+
+# A = int(input())
+# print(not (A > -10 and A < -1 or A > 2 and A < 15))
 
 
 
