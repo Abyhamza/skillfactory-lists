@@ -243,6 +243,10 @@ name_phone = {
 }
 print(name_phone['kazbek'])
 
+name = [1, 'kazbek', (12, 15, 16)]
+
+print(len(name))
+
 import datetime
 
 open_until = 20
@@ -251,9 +255,30 @@ time_now = datetime.datetime.now().hour
 tsekh_open = 'open' if time_now < open_until else 'closed'
 print(tsekh_open)
 
-# A = int(input())
-# print(not (A > -10 and A < -1 or A > 2 and A < 15))
+
+print(list(range(12)))
+
+print(list(range(3, 5)))
+
+print(list(range(1, 6, 2)))
 
 
+S = 0
+N = 5
+
+for i in range(1, N + 1):
+    print("Значение суммы на предыдушем шаге: ", S)
+    print("Текущее число: ", i)
+    S = S + i
+    print("Значение суммы после сложения: ", S)
+    print("___")
+print("Конец цикла")
+print("Ответ: сумма равна = ", S)
 
 
+P = 1
+N = 5
+
+for i in range(1, N + 1):
+    P *= i
+    print(P)
