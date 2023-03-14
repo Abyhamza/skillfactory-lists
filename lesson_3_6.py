@@ -245,13 +245,13 @@ def check_h(n):
     while n > 1:
         if n % 2 == 0:
             n = n // 2
-        if n % 2 == 1:
+        else:
             n = (n * 3 + 1) // 2
+        print(n)
         if n == 1:
-            return True
-        return False
+            return
 
-print(check_h(6))
+check_h(15)
 
 #n = int(input("Введите число\n"))
 
