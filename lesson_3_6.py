@@ -247,11 +247,11 @@ def check_h(n):
             n = n // 2
         else:
             n = (n * 3 + 1) // 2
-        print(n)
         if n == 1:
-            return
+            return True
+        return False
 
-check_h(15)
+check_h(4)
 
 #n = int(input("Введите число\n"))
 
@@ -265,3 +265,18 @@ check_h(15)
 #     if n == 1:
 #         print("Done")
 #         break
+
+# Continue
+heads = 35 # количество голов
+legs = 94 # количество ног
+
+for r in range(heads + 1): # количество фазанов
+    for ph in range(heads + 1): # количество фазанов
+# если суммарное количество голов превышено или ног,
+# превышено то переходим на следующий шаг цикла
+        if (r + ph) > heads or (r * 4 + ph * 2) > legs:
+            continue
+        if (r + ph) == heads and (r * 4 + ph * 2) == legs:
+            print("Количество кроликов", r)
+            print("Количество фазанов", ph)
+            print("_____")
