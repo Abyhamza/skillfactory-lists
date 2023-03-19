@@ -6,17 +6,16 @@
 #
 # clock(5)
 #
-# def fantesi(n):
-#     for i in range(0, n):
-#         if i >= 0:
-#             print('# ', end= '')
-#         else:
-#             print(' *')
-#         for j in range(0, n):
-#             print('* ', end= ' ')
-#         print()
-#
-# fantesi(3)
+def fantesi(n):
+    for i in range(0, n):
+        for j in range(0, n):
+            if (i + j) % 2 == 0:
+                print('* ', end= '')
+            else:
+                print('# ', end= '')
+        print()
+
+fantesi(10)
 
 genre = ['поп', 'рок', 'джаз']
 
@@ -25,3 +24,18 @@ for i in range(len(genre)):
         print("Мне не нравиться рок")
     else:
         print("Мне нравится", genre[i])
+
+
+a = 10
+
+if a < 0:
+    print("меньше 0")
+else:
+    print("больше 0")
+
+d = [[1, 2, 3], [4, 5, 6]]
+
+for i in range(2):
+    for j in range(3):
+        print(d[i][j])
+
