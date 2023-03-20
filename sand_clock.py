@@ -15,6 +15,7 @@ def fantesi(n):
                 print('# ', end= '')
         print()
 
+fantesi(5)
 fantesi(10)
 
 genre = ['поп', 'рок', 'джаз']
@@ -38,4 +39,11 @@ d = [[1, 2, 3], [4, 5, 6]]
 for i in range(2):
     for j in range(3):
         print(d[i][j])
+
+ages = [1, 5, 8, 12, 17, 18, 25, 30, 45, 60, 73]
+
+print(ages[5:])
+
+ages1 = [25, 30, 1, 5, 45, 60, 8, 12, 17, 18, 73]
+print()
 
