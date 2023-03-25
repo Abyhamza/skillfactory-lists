@@ -27,7 +27,7 @@ ages_2 = [('john', 25), ('tom', 30), ('tim', 1), ('jane', 5), ('jack', 45), ('jo
 def tupleAges(ages_2):
     for i in ages_2:
         if i[1] >= 18:
-            print(i[0])
+            print(i)
 
 tupleAges(ages_2)
 
