@@ -33,12 +33,23 @@ print('---------')
 # Список numbers должен быть предварительно задан.
 numbers = [1, 2, 3, 4, 5]
 target_sum = 7
-for i in (numbers):
-    for j in (numbers):
-        if i + j == target_sum:
-            print(i, j)
+for i in numbers:
+    for j in numbers:
+        for x in numbers:
+            if i + j + x == target_sum:
+                print(i, j, x)
 
 print('_________')
 
+#Используя вложенные циклы for, напишите программу, которая выводит все подмножества заданного списка elements.
+# Результат должен быть представлен в виде строк, в которых элементы подмножества разделены запятыми.
+elements = ['A', 'B', 'C']
+for i in elements:
+    for j in elements:
+        print(i, j)
+
+
+numbers1 = [1, 2, 3, 4, 5]
+target_sum1 = 25
 
 
