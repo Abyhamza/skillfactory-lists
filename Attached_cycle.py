@@ -45,11 +45,22 @@ print('_________')
 # Результат должен быть представлен в виде строк, в которых элементы подмножества разделены запятыми.
 elements = ['A', 'B', 'C']
 for i in elements:
+    print(i)
     for j in elements:
-        print(i, j)
+        print(j, i)
+        for x in elements:
+            if i < j and j < x and i < x:
+                print(i, j, x)
 
 
 numbers1 = [1, 2, 3, 4, 5]
 target_sum1 = 25
+for i in numbers1:
+    for j in numbers1:
+        for x in numbers1:
+            for y in numbers1:
+                for h in numbers1:
+                    if i + j + x + y + h == target_sum1:
+                        print(i, j, x, y, h)
 
 
