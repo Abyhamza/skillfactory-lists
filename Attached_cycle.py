@@ -47,10 +47,11 @@ elements = ['A', 'B', 'C']
 for i in elements:
     print(i)
     for j in elements:
-        print(j, i)
+        if i != j and j != i:
+            print(f'{i}, {j}')
         for x in elements:
-            if i < j and j < x and i < x:
-                print(i, j, x)
+            if i != j and j != x and i != x:
+                print(f'{i}, {j}, {x}')
 
 
 numbers1 = [1, 2, 3, 4, 5]
