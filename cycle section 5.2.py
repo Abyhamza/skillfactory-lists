@@ -22,14 +22,17 @@ for i in coins:
                         print("Количество способов:", n1)
 
 
-# Используя вложенные циклы for, напишите программу, которая выводит все возможные комбинации чисел от 1 до n, которые можно сложить, чтобы получить заданное число target.
-# Значения n и target должны быть предварительно заданы.
-n2 = 3
-target = 5
-for i in range(1, n2):
-    for j in range(1, n2):
-        if i + j == target:
-            print(f'{i} + {j}')
+
+in_srt = "aaabbbbaaabbcccddddd"
+def encode(in_str):
+    for i in in_srt:
+        print(i, end='')
+encode("abc")
+
+
+
+
+
 
 
 
