@@ -29,17 +29,16 @@ def encode(in_str):
     counter = 0
     for i in in_str:
         if lastChar != i and lastChar != None:
-            result += lastChar
-        elif counter > 1 and counter == True:
-            print(i)
-            lastChar = None
-            counter = 0
+            result += ""
+            counter += 1
+        elif counter > 1 and counter < 0:
+            result += ""
+            counter += 1
+        print(i, end= '')
 
 
 encode("aaabbbbaaabbcccddddd")
 
-
-print("a3b4a3b2c3d5")
 
 
 
