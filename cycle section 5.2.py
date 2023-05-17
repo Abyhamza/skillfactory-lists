@@ -28,16 +28,19 @@ def encode(in_str):
     lastChar = None
     counter = 0
     for i in in_str:
-        if lastChar != i and lastChar != None:
-            result += ""
+        if lastChar == i and lastChar == None:
+            result == "a"
             counter += 1
-        elif counter > 1 and counter < 0:
-            result += ""
+            print(i)
+        elif counter > 1 and counter > 0:
+            result == "b"
             counter += 1
-        print(i, end= '')
+            return result
+        print(i)
 
 
 encode("aaabbbbaaabbcccddddd")
+
 
 
 
