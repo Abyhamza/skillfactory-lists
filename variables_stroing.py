@@ -15,6 +15,7 @@ def encode(in_str):
             # Создаем переменную LestChar чтобы хранить последний сивол
             lastChar = char
         else:
+            # Создаем счетчик
             counter += 1
             lastChar = char
     return result
