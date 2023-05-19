@@ -5,20 +5,23 @@ def encode(in_str):
     lastChar = None
     # Создаем переменную counter чтобы считать количество поторений символа
     counter = 0
-    # Создаем цикл for
+    # Создаем цикл for который включает символ (char) в строке (in_str)
     for char in in_str:
+        # Если последний символ(LastСhar) не равен нынешней(char) и последний символ(LastChar) не равен None
         if lastChar != char and lastChar != None:
-            # Сохраняем результат LastChar и счетчика
+            # В результат (result) предыдущего символа (LestChar)добавляем счетчик(counter)
             result += f"{lastChar}{counter}"
-            # Создаем переменную counter где будем сохранять результат работы цикла
+            # В счетчик (counter) присваиваем значение один
             counter = 1
-            # Создаем переменную LestChar чтобы хранить последний сивол
+            # В предыдущий символ(LestChar) присваиваем значение нынешего символа (char)
             lastChar = char
         else:
-            # Создаем счетчик
+            # В счетчик (counter) добавляем значение при каждом цикле
             counter += 1
+            # В предыдущий символ(LestChar) присваиваем значение нынешего символа (char)
             lastChar = char
     return result
+
 
 test_in_1 =  "aaabbbbaaabbcccddddd"
 test_out_1 = "a3b4a3b2c3d5"
