@@ -26,9 +26,23 @@ def encode(in_str):
 test_in_1 =  "aaabbbbaaabbcccddddd"
 test_out_1 = "a3b4a3b2c3d5"
 test_result_1 = encode(test_in_1)
-print(f"{test_in_1} => {test_out_1} == {test_result_1} is {test_out_1 is test_result_1}")
+print(f"{test_in_1} => {test_out_1} == {test_result_1} is {test_out_1 == test_result_1}")
 
 test_in_2 =  "jjjjkkkkaaaaasss"
 test_out_2 = "j4k4a5s3"
 test_result_2 = encode(test_in_2)
-print(f"{test_in_2} => {test_out_2} == {test_result_2} is {test_out_2 is test_result_2}")
+print(f"{test_in_2} => {test_out_2} == {test_result_2} is {test_out_2 == test_result_2}")
+
+
+def Return(a, b, c):
+    a = 10
+    b = 10
+    c = 10
+    return a + b + c
+res = Return(1, 2, 3)
+print(res)
+
+def Return(a, b, c):
+    return a + b + c
+res = Return(1, 2, 3)
+print(res)
