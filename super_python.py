@@ -72,6 +72,6 @@ del thislist[0]
 thislist = ["apple", "banana", "cherry"]
 thislist.clear()
 print(thislist)
-# При помощьи метода clear можно опусташить весь список
+# При помощьи метода clear можно опусташить весь списо
 
 
