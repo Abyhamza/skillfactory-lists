@@ -36,54 +36,55 @@ thislist.insert(1, "апельсин")
 print(thislist)
 
 # Таким образом методом extend мы добавили список в список этим мы получили один большой
-thislist = ["apple", "banana", "cherry"]
-tropical = ["mango", "pineapple", "papaya"]
-cars = ["bmx", "vaz", "audi"]
+thislist = ["яблоко", "банан", "вишня"]
+tropical = ["манго", "ананс", "папая"]
+cars = ["БМВ", "ВАЗ", "АУДИ"]
 thislist.extend(tropical)
+thislist.extend(cars)
 thislist.extend(cars)
 print(thislist)
 
 # Таким оброзом метод extend не ограничиваеться дабалением только списка в список но и других типов даных как картеджи,славаря и т.д.
-thislist = ["apple", "banana", "cherry"]
-thistuple = ("kiwi", "orange")
+thislist = ["яблоко", "банан", "вишня"]
+thistuple = ("арбуз", "дыня")
 thislist.extend(thistuple)
 print(thislist)
 
 # При помощьи метода remove мы удаляем кокретно указаный элемент
-thislist = ["apple", "banana", "cherry"]
-thislist.remove("banana")
+thislist = ["яблоко", "банан", "вишня"]
+thislist.remove("банан")
 print(thislist)
 
-# При помощьи pop мы удаляем по указаному индексу
-thislist = ["apple", "banana", "cherry"]
-thislist.pop(1)
-print(thislist)
+print("При помощьи pop мы удаляем по указаному индексу")
+thislist = ["яблоко", "банан", "вишня"]
+print(thislist.pop(1))
 
 
 # При помощьи del так же удаляем указанный индекс
-thislist = ["apple", "banana", "cherry"]
+thislist = ["яблоко", "банан", "вишня"]
 del thislist[0]
 print(thislist)
 
-# Так же при помощьи del можно удалит весь список
-thislist = ["apple", "banana", "cherry"]
-del thislist[0]
+print("Так же при помощьи del можно удалит весь список")
+thislist = ["яблоко", "банан", "вишня"]
+del thislist
 
-# При помощьи метода clear можно опусташить весь список
-thislist = ["apple", "banana", "cherry"]
-thislist.clear()
+print("При помощьи метода remove можно опусташить весь список")
+thislist = ["яблоко", "банан", "вишня"]
+if "вишня" in thislist:
+    thislist.remove("вишня")
 print(thislist)
 
 
 x = 1
 print(type(x))
-mylist = ["apple", "banana", "cherry"]
+mylist = ["яблоко", "банан", "вишня"]
 try:
     print(type(mylist[5]))
 except IndexError:
     print("ошибка")
 
-thislist = ["яблоко", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+thislist = ["яблоко", "банан", "вишня", "апельсин", "киви", "дыня", "манго"]
 print(thislist[1:-1])
 
 is_apple_in_list = "яблоко" in thislist
@@ -100,5 +101,21 @@ is_true = "True"
 print(type(is_true))
 
 massiv = ["яблоко", "банан", "вишня"]
-print(massiv[:2])
+print(massiv[1:2])
+print(massiv[0][0])
+
+for i in range(0,  10):
+    if i > 5 and is_apple_in_list:
+        print(i)
+
+list_1 = ["яблоко", "банан", "арбуз"]
+name_1, name_2, name_3 = list_1
+print(name_1, name_2, name_3)
+
+
+name = "artur"
+name = "kazbek"
+name = ["artur", "kazbek"]
+print(name)
+
 
