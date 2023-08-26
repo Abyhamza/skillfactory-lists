@@ -23,3 +23,14 @@ while frukt != "cherry":
 x = 1
 x += 2
 print(x)
+
+line = input()
+print(line)
+print(type(line))
+while line != "end":
+    # обработка
+    num = int(line)
+    print(num ** 2)
+    line = input()
+
+
