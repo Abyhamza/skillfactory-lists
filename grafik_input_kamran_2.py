@@ -7,13 +7,13 @@ fig = plt.figure()
 x_axis = []
 y_axis = []
 
-newland = ""
-while newland != "end":
+go_next = ''
+while go_next != "no":
     lang = input("Введи язык Программирования:")
     x_axis.append(lang)
     students = input("Введите количеcтво студентов:")
     y_axis.append(int(students))
-    newland = "end"
+    go_next = input("Продолжить?(yes/no)")
 
 plt.bar(x_axis, y_axis)
 plt.xlabel("Courses offered")
